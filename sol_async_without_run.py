@@ -33,6 +33,11 @@ def your_function(timeout):
             break
 
 
+# def normal_func(timeout):
+#     time.sleep(timeout)
+#     print("normal func finished")
+
+
 if __name__ == "__main__":
     # Create and set the event loop
     loop = asyncio.new_event_loop()
@@ -41,6 +46,7 @@ if __name__ == "__main__":
     # Start background tasks
     your_function(10)
     your_function(5)
+
     your_function(3)
 
     # Keep the main thread running
